@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: rgb(red, green, blue);
+
+}
+.form-control {
+  display: flex;
+}
+.form-control input {
+  flex: 1;
+  
+}
+
+
+.button {
+  padding-left: 269px;
+
+}
