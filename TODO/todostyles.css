@@ -20,7 +20,7 @@ header {
   flex: 1;
   outline: 0;
   box-shadow: none;
-  border: 1px solid #858585;
+  border: 1px solid #d6d1d1;
 }
 .form-control button:hover {
   background-color: green;
@@ -37,7 +37,7 @@ header {
   transition: 0.4s;
   border: 1px solid orange;
 }
-button:hover {
+button:hover 
   background-color: orangered;
   color: white;
 }
@@ -64,9 +64,8 @@ input {
 }
 header > h1 {
   padding-left: 16px;
-  border-left: 5px solid  rgb(105, 13, 67);
+  border-left: 5px solid rgb(105, 13, 67);
 }
-
 
 #edit-form {
   padding: 1rem;
@@ -83,12 +82,7 @@ header > h1 {
 #cancel-edit-btn {
   margin-top: 1rem;
 }
-#active-edit-btn {
-  margin-top: 1rem;
-}
-#completed-edit-btn {
-  margin-top: 1rem;
-}
+
 .todo {
   display: flex;
   justify-content: space-around;
@@ -134,9 +128,7 @@ header > h1 {
   padding-left: 15px;
   padding-top: 15px;
   color: whitesmoke;
-  
 }
 .todo {
   color: whitesmoke;
-  
 }

@@ -60,15 +60,18 @@ function checkOrDelete(event) {
 todoList.addEventListener("click", checkOrDelete);
 // const saveTodo = (text) => {
 
-// }
-// document.addEventListener("click", (e) => {
-//   const targetEl = e.target;
-//   const parentEl = target.closes("div");
-//   let todoTitle;
 
-//   if(parentEl && parentEl.querySelector("h3"))
-//     todoTitle = parentEl.querySelector("h3").innerText;
+document.addEventListener("click", (e) => {
+  const targetEl = e.target;
+  const parentEl = target.closes("div");
+  let todoTitle;
 
-//     if(parentEl.classList.contains("remove-todo"))
-//       parentEl.classList.remove();
-// })
+    if(targetEl.classList.contains("remove-todo"))
+      targetEl.classList.remove();
+      
+})
+const element = 
+document.getElementById("todo-list");
+element.addEventListener("dblclick", function() {
+  element.textContent = "Новый текст";
+});
