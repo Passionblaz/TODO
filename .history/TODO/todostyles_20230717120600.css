@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* background: url("https://avatars.mds.yandex.net/get-vertis-journal/4471904/6.jpg_1667982291777/orig")
+    no-repeat center center fixed; */
+  background-size: cover;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* background: RGB(255, 255, 255); */
+  opacity: 100%;
+}
+header {
+  color: rgb(250, 250, 250);
+  
+  background-color: #070600;
+  border: 2px solid black;
+  opacity: 50%;
+  background: black;
+}
+p {
+  background: black;
+  font-size: 1.2rem;
+}
+.form-control {
+  display: flex;
+  background-color: black;
+  border: 2px solid black;
+  background: black;
+  opacity: 50%;
+}
+.form-control input {
+  flex: 1;
+  outline: 0;
+  box-shadow: none;
+  /* border: 1px solid #d6d1d1; */
+  border: 2px solid black;
+  background: black;
+  opacity: 50%;
+}
+.form-control button:hover {
+  background: black;
+  border: 2px solid black;
+  background: black;
+}
+/* button {
+  background-color: darkorange;
+  color: blue;
+  border: 2px solid red;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border: 1px solid orange;
+}
+button:hover 
+  background-color: orangered;
+  color: white;
+}
+button > i {
+  font-weight: bold;
+  pointer-events: none;
+} */
+input {
+  padding: 0.4rem 0.5rem;
+  border: 2px solid black;
+}
+.hide {
+  display: none;
+}
+.todo-container {
+  background-color: #070600;
+  /* border-radius: 15px; */
+  width: 450px;
+  margin: 3rem auto;
+  padding: 1.5.rem;
+  border: 2px solid black;
+}
+.todo-container header {
+  padding: 0.1rem 1rem;
+  /* border-bottom: 1px solid whitesmoke; */
+  border: 2px solid black;
+}
+header > h1 {
+  padding-left: 16px;
+  /* border-left: 5px solid rgb(105, 13, 67); */
+  background: black;
+  opacity: 100%;
+}
+
+#edit-form {
+  padding: 1rem;
+  /* border-bottom: 1px solid #ccc; */
+  border: 2px solid black;
+}
+#todo-form > p,
+#edit-form > p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  border: 2px solid black;
+}
+.form-control > input {
+  margin-right: 0.6rem;
+  border: 2px solid black;
+  opacity: 100%;
+  font-size: 1.2rem;
+  background-color: white;
+}
+#cancel-edit-btn {
+  margin-top: 1rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem 0.2rem;
+  /* border-bottom: 1px solid #ddd; */
+  transition: 0.3s;
+  border: 2px solid black;
+  background: black;
+  opacity: 50%;
+}
+.todo h3 {
+  flex: 1;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-left: 5px;
+  background: black;
+  opacity: 100%;
+}
+.todo button {
+  margin-left: 0.4rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  border: 2px solid rgb(255, 255, 255);
+  opacity: 100%;
+}
+.done h3 {
+  color: white;
+  text-decoration: line-through;
+  font-style: italic;
+}
+.todo button:hover,
+.done button {
+  background-color: #f5010d;
+  color: #ecf0f1;
+}
+.done > button:hover {
+  background-color: #ecf0f1;
+  color: #395169;
+}
+.todo-list {
+  max-height: 220px;
+  overflow: auto;
+  color: white;
+}
+.add-tasks {
+  padding-left: 15px;
+  padding-top: 15px;
+  color: whitesmoke;
+  border: 2px solid black;
+  background: black;
+  opacity: 50%;
+}
+.todo {
+  color: whitesmoke;
+  font-size: 150;
+  border: 2px solid black;
+}
+h1 {
+  font-size: 150px;
+}
+.button {
+  background: black;
+  background-color: black
+}
+.todo-button {
+  color: whitesmoke;
+}
+.empty-state {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+/* Add this below the other styles */
+.todo-list:empty {
+  display: none;
+}
+
+.todo-list:empty + .empty-state {
+  display: flex;
+}
