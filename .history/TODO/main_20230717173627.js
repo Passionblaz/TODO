@@ -65,13 +65,13 @@ function render() {
 // })
 function checkOrDelete(event) {
   const todoID = event.target.parentNode.id
-    if (event.target.classList.contains("remove-todo")) {
+    if (event.target.classList.contains("button")) {
 
     tasksArray = tasksArray.filter(element => element.id !== Number(todoID));
     render();
     }
     
-    if (event.target.classList.contains("checkbox")) {
+    if (event.target.classList.contains("finish-todo")) {
     const selectedTodo = tasksArray.find(element => element.id === Number(todoID));
 
     selectedTodo.checkbox = event.target.checked

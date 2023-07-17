@@ -66,7 +66,7 @@ function render() {
 function checkOrDelete(event) {
   const todoID = event.target.parentNode.id
     if (event.target.classList.contains("remove-todo")) {
-
+console.log(todoID)
     tasksArray = tasksArray.filter(element => element.id !== Number(todoID));
     render();
     }

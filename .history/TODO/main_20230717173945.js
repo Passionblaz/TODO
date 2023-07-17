@@ -73,7 +73,7 @@ function checkOrDelete(event) {
     
     if (event.target.classList.contains("checkbox")) {
     const selectedTodo = tasksArray.find(element => element.id === Number(todoID));
-
+console.
     selectedTodo.checkbox = event.target.checked
     render();
     }
