@@ -78,22 +78,29 @@ function checkOrDelete(event) {
     render();
     }
 
-    // if(event.target.classList.contains("button-all")) {
-      
-    //   selectedTodo.checkbox = event.target.checked
-    //   render();
-    // }
   }
-  
-  checkall.addEventListener('click', () => {
-    for(let i = 0; i < tasks.length; ++i) {
-      if (!tasks[i].completed) {
-        tasks[i].completed = true;
-        todoTasks[i].classList.add('checked')
-      }
+    function completeAll(event) {
+      for(let i = 0; i < tasks.length; ++i) {
+        //     if (!tasks[i].completed) {
+        //       tasks[i].completed = true;
+        //       todoTasks[i].classList.add('checked')
+        //     }
+        //   }
     }
-   
-  })
+    
+    selectedTodo.checkbox = event.target.checked
+    render();
+  
+  
+  // completeAll.addEventListener('click', () => {
+  //   for(let i = 0; i < tasks.length; ++i) {
+  //     if (!tasks[i].completed) {
+  //       tasks[i].completed = true;
+  //       todoTasks[i].classList.add('checked')
+  //     }
+  //   }
+  //   showTasks();
+  // })
 
   // console.log(event.target.checked);
   
@@ -103,7 +110,7 @@ function checkOrDelete(event) {
   
 // }
 todoList.addEventListener("click", checkOrDelete);
-
+button-all.addEventListener("click", completeAll);
 // render();
 // const saveTodo = (text) => {
 

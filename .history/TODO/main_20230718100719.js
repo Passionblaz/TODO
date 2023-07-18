@@ -85,7 +85,7 @@ function checkOrDelete(event) {
     // }
   }
   
-  checkall.addEventListener('click', () => {
+  button.addEventListener('click', () => {
     for(let i = 0; i < tasks.length; ++i) {
       if (!tasks[i].completed) {
         tasks[i].completed = true;

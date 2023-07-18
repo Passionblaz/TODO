@@ -85,15 +85,15 @@ function checkOrDelete(event) {
     // }
   }
   
-  checkall.addEventListener('click', () => {
-    for(let i = 0; i < tasks.length; ++i) {
-      if (!tasks[i].completed) {
-        tasks[i].completed = true;
-        todoTasks[i].classList.add('checked')
-      }
-    }
-   
-  })
+  // completeAll.addEventListener('click', () => {
+  //   for(let i = 0; i < tasks.length; ++i) {
+  //     if (!tasks[i].completed) {
+  //       tasks[i].completed = true;
+  //       todoTasks[i].classList.add('checked')
+  //     }
+  //   }
+  //  
+  // })
 
   // console.log(event.target.checked);
   

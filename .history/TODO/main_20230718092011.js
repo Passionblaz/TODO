@@ -78,23 +78,12 @@ function checkOrDelete(event) {
     render();
     }
 
-    // if(event.target.classList.contains("button-all")) {
-      
-    //   selectedTodo.checkbox = event.target.checked
-    //   render();
-    // }
+    if(event.target.classList.contains("button-all")) {
+      // selectedTodo.checkbox = event.target.checked
+      // render();
+    }
   }
   
-  checkall.addEventListener('click', () => {
-    for(let i = 0; i < tasks.length; ++i) {
-      if (!tasks[i].completed) {
-        tasks[i].completed = true;
-        todoTasks[i].classList.add('checked')
-      }
-    }
-   
-  })
-
   // console.log(event.target.checked);
   
 // // todo.splice(index (1))
